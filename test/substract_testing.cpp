@@ -6,5 +6,5 @@
 
 TEST(substract, subtract) {
 substract mySubstract;
-GTEST_ASSERT_EQ(3, mySubstract.doSubstract(5,2));
+GTEST_ASSERT_EQ(2, mySubstract.doSubstract(5,2));
 }
