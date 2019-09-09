@@ -19,5 +19,5 @@ target_link_libraries(sub_tests     gtest_main
 
 
 # Link test executable against gtest & gtest_main
-add_test( unit_tests unit_tests )
-add_test( sub_tests sub_tests )
+add_test( unit_tests ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/unit_tests )
+add_test( sub_tests ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/sub_tests )
