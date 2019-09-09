@@ -246,6 +246,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named sub_tests
+
+# Build rule for target.
+sub_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sub_tests
+.PHONY : sub_tests
+
+# fast build rule for target.
+sub_tests/fast:
+	$(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/build
+.PHONY : sub_tests/fast
+
+#=============================================================================
 # Target rules for targets named unit_tests
 
 # Build rule for target.
@@ -277,6 +290,7 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... sub_tests"
 	@echo "... unit_tests"
 .PHONY : help
 
