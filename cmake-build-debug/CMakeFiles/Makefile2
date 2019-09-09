@@ -370,13 +370,11 @@ clean: googletest/googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/sub_tests.dir/all
 test/all: test/CMakeFiles/unit_tests.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/sub_tests.dir/clean
 test/clean: test/CMakeFiles/unit_tests.dir/clean
 
 .PHONY : test/clean
@@ -387,45 +385,6 @@ test/preinstall:
 .PHONY : test/preinstall
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/sub_tests.dir
-
-# All Build rule for target.
-test/CMakeFiles/sub_tests.dir/all: src/CMakeFiles/example.dir/all
-test/CMakeFiles/sub_tests.dir/all: googletest/googletest-build/googlemock/gtest/CMakeFiles/gtest_main.dir/all
-test/CMakeFiles/sub_tests.dir/all: googletest/googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/all
-	$(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/depend
-	$(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/CMakeFiles" --progress-num=18,19,20,21 "Built target sub_tests"
-.PHONY : test/CMakeFiles/sub_tests.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/sub_tests.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/sub_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/CMakeFiles" 12
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sub_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/CMakeFiles" 0
-.PHONY : test/CMakeFiles/sub_tests.dir/rule
-
-# Convenience name for target.
-sub_tests: test/CMakeFiles/sub_tests.dir/rule
-
-.PHONY : sub_tests
-
-# clean rule for target.
-test/CMakeFiles/sub_tests.dir/clean:
-	$(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/clean
-.PHONY : test/CMakeFiles/sub_tests.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/sub_tests.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target test/CMakeFiles/unit_tests.dir
 
 # All Build rule for target.
@@ -434,7 +393,7 @@ test/CMakeFiles/unit_tests.dir/all: googletest/googletest-build/googlemock/gtest
 test/CMakeFiles/unit_tests.dir/all: googletest/googletest-build/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/depend
 	$(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/CMakeFiles" --progress-num=22,23,24 "Built target unit_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/CMakeFiles" --progress-num=18,19,20,21 "Built target unit_tests"
 .PHONY : test/CMakeFiles/unit_tests.dir/all
 
 # Include target in all.
@@ -444,7 +403,7 @@ all: test/CMakeFiles/unit_tests.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/unit_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/CMakeFiles" 11
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/CMakeFiles" 12
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/unit_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/CMakeFiles" 0
 .PHONY : test/CMakeFiles/unit_tests.dir/rule

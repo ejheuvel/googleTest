@@ -90,6 +90,28 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -112,28 +134,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,21 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/sub_tests.dir/rule:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/sub_tests.dir/rule
-.PHONY : test/CMakeFiles/sub_tests.dir/rule
-
-# Convenience name for target.
-sub_tests: test/CMakeFiles/sub_tests.dir/rule
-
-.PHONY : sub_tests
-
-# fast build rule for target.
-sub_tests/fast:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/build
-.PHONY : sub_tests/fast
-
-# Convenience name for target.
 test/CMakeFiles/unit_tests.dir/rule:
 	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/unit_tests.dir/rule
 .PHONY : test/CMakeFiles/unit_tests.dir/rule
@@ -203,7 +188,6 @@ example_add.o: example_add.cpp.o
 
 # target to build an object file
 example_add.cpp.o:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/example_add.cpp.o
 	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/example_add.cpp.o
 .PHONY : example_add.cpp.o
 
@@ -213,7 +197,6 @@ example_add.i: example_add.cpp.i
 
 # target to preprocess a source file
 example_add.cpp.i:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/example_add.cpp.i
 	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/example_add.cpp.i
 .PHONY : example_add.cpp.i
 
@@ -223,7 +206,6 @@ example_add.s: example_add.cpp.s
 
 # target to generate assembly for a file
 example_add.cpp.s:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/example_add.cpp.s
 	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/example_add.cpp.s
 .PHONY : example_add.cpp.s
 
@@ -233,7 +215,6 @@ example_subtract.o: example_subtract.cpp.o
 
 # target to build an object file
 example_subtract.cpp.o:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/example_subtract.cpp.o
 	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/example_subtract.cpp.o
 .PHONY : example_subtract.cpp.o
 
@@ -243,7 +224,6 @@ example_subtract.i: example_subtract.cpp.i
 
 # target to preprocess a source file
 example_subtract.cpp.i:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/example_subtract.cpp.i
 	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/example_subtract.cpp.i
 .PHONY : example_subtract.cpp.i
 
@@ -253,7 +233,6 @@ example_subtract.s: example_subtract.cpp.s
 
 # target to generate assembly for a file
 example_subtract.cpp.s:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/example_subtract.cpp.s
 	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/example_subtract.cpp.s
 .PHONY : example_subtract.cpp.s
 
@@ -263,7 +242,7 @@ substract_testing.o: substract_testing.cpp.o
 
 # target to build an object file
 substract_testing.cpp.o:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/substract_testing.cpp.o
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/substract_testing.cpp.o
 .PHONY : substract_testing.cpp.o
 
 substract_testing.i: substract_testing.cpp.i
@@ -272,7 +251,7 @@ substract_testing.i: substract_testing.cpp.i
 
 # target to preprocess a source file
 substract_testing.cpp.i:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/substract_testing.cpp.i
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/substract_testing.cpp.i
 .PHONY : substract_testing.cpp.i
 
 substract_testing.s: substract_testing.cpp.s
@@ -281,7 +260,7 @@ substract_testing.s: substract_testing.cpp.s
 
 # target to generate assembly for a file
 substract_testing.cpp.s:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/sub_tests.dir/build.make test/CMakeFiles/sub_tests.dir/substract_testing.cpp.s
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f test/CMakeFiles/unit_tests.dir/build.make test/CMakeFiles/unit_tests.dir/substract_testing.cpp.s
 .PHONY : substract_testing.cpp.s
 
 # Help Target
@@ -293,11 +272,10 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... install/local"
-	@echo "... sub_tests"
-	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... install/local"
+	@echo "... test"
 	@echo "... unit_tests"
 	@echo "... example_add.o"
 	@echo "... example_add.i"

@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/test/example_add.cpp" "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/test/CMakeFiles/unit_tests.dir/example_add.cpp.o"
   "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/test/example_subtract.cpp" "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/test/CMakeFiles/unit_tests.dir/example_subtract.cpp.o"
+  "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/test/substract_testing.cpp" "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/test/CMakeFiles/unit_tests.dir/substract_testing.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
