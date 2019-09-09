@@ -181,17 +181,17 @@ gtesting/fast:
 .PHONY : gtesting/fast
 
 #=============================================================================
-# Target rules for targets named example
+# Target rules for targets named src
 
 # Build rule for target.
-example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 example
-.PHONY : example
+src: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 src
+.PHONY : src
 
 # fast build rule for target.
-example/fast:
-	$(MAKE) -f src/CMakeFiles/example.dir/build.make src/CMakeFiles/example.dir/build
-.PHONY : example/fast
+src/fast:
+	$(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
+.PHONY : src/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -272,7 +272,7 @@ help:
 	@echo "... install/local"
 	@echo "... test"
 	@echo "... gtesting"
-	@echo "... example"
+	@echo "... src"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest_main"
