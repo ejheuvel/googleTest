@@ -2,17 +2,9 @@ add_executable(
     unit_tests
     example_add.cpp
     example_subtract.cpp
-        substract_testing.cpp)
+    substract_testing.cpp
+)
 
-target_link_libraries(
-    unit_tests
-    gtest_main
-    example
-    )
+target_link_libraries(unit_tests gtest_main src)
 
-add_test(
-  NAME
-    unit
-  COMMAND
-    ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/unit_tests
-  )
+add_test( unit_tests ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR}/unit_tests )

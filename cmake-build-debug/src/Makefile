@@ -183,19 +183,19 @@ gtesting/fast:
 .PHONY : gtesting/fast
 
 # Convenience name for target.
-src/CMakeFiles/example.dir/rule:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/example.dir/rule
-.PHONY : src/CMakeFiles/example.dir/rule
+src/CMakeFiles/src.dir/rule:
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/src.dir/rule
+.PHONY : src/CMakeFiles/src.dir/rule
 
 # Convenience name for target.
-example: src/CMakeFiles/example.dir/rule
+src: src/CMakeFiles/src.dir/rule
 
-.PHONY : example
+.PHONY : src
 
 # fast build rule for target.
-example/fast:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/example.dir/build.make src/CMakeFiles/example.dir/build
-.PHONY : example/fast
+src/fast:
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
+.PHONY : src/fast
 
 example.o: example.cpp.o
 
@@ -203,7 +203,7 @@ example.o: example.cpp.o
 
 # target to build an object file
 example.cpp.o:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/example.dir/build.make src/CMakeFiles/example.dir/example.cpp.o
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/example.cpp.o
 .PHONY : example.cpp.o
 
 example.i: example.cpp.i
@@ -212,7 +212,7 @@ example.i: example.cpp.i
 
 # target to preprocess a source file
 example.cpp.i:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/example.dir/build.make src/CMakeFiles/example.dir/example.cpp.i
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/example.cpp.i
 .PHONY : example.cpp.i
 
 example.s: example.cpp.s
@@ -221,7 +221,7 @@ example.s: example.cpp.s
 
 # target to generate assembly for a file
 example.cpp.s:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/example.dir/build.make src/CMakeFiles/example.dir/example.cpp.s
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/example.cpp.s
 .PHONY : example.cpp.s
 
 main.o: main.cpp.o
@@ -231,7 +231,7 @@ main.o: main.cpp.o
 # target to build an object file
 main.cpp.o:
 	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/gtesting.dir/build.make src/CMakeFiles/gtesting.dir/main.cpp.o
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/example.dir/build.make src/CMakeFiles/example.dir/main.cpp.o
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -241,7 +241,7 @@ main.i: main.cpp.i
 # target to preprocess a source file
 main.cpp.i:
 	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/gtesting.dir/build.make src/CMakeFiles/gtesting.dir/main.cpp.i
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/example.dir/build.make src/CMakeFiles/example.dir/main.cpp.i
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -251,7 +251,7 @@ main.s: main.cpp.s
 # target to generate assembly for a file
 main.cpp.s:
 	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/gtesting.dir/build.make src/CMakeFiles/gtesting.dir/main.cpp.s
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/example.dir/build.make src/CMakeFiles/example.dir/main.cpp.s
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 substract.o: substract.cpp.o
@@ -260,7 +260,7 @@ substract.o: substract.cpp.o
 
 # target to build an object file
 substract.cpp.o:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/example.dir/build.make src/CMakeFiles/example.dir/substract.cpp.o
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/substract.cpp.o
 .PHONY : substract.cpp.o
 
 substract.i: substract.cpp.i
@@ -269,7 +269,7 @@ substract.i: substract.cpp.i
 
 # target to preprocess a source file
 substract.cpp.i:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/example.dir/build.make src/CMakeFiles/example.dir/substract.cpp.i
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/substract.cpp.i
 .PHONY : substract.cpp.i
 
 substract.s: substract.cpp.s
@@ -278,7 +278,7 @@ substract.s: substract.cpp.s
 
 # target to generate assembly for a file
 substract.cpp.s:
-	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/example.dir/build.make src/CMakeFiles/example.dir/substract.cpp.s
+	cd "/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/substract.cpp.s
 .PHONY : substract.cpp.s
 
 # Help Target
@@ -295,7 +295,7 @@ help:
 	@echo "... install/local"
 	@echo "... test"
 	@echo "... gtesting"
-	@echo "... example"
+	@echo "... src"
 	@echo "... example.o"
 	@echo "... example.i"
 	@echo "... example.s"

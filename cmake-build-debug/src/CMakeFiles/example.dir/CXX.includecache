@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/src/substract.cpp
-substract.h
-/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/src/substract.h
-
-/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/src/substract.h
+/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/src/main.cpp
+iostream
+-
 

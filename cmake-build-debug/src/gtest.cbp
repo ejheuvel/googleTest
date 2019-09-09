@@ -59,8 +59,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Esper/Documents/Avans/Jaar\ 4/Blok\ 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="example">
-				<Option output="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/lib/libexample.a" prefix_auto="0" extension_auto="0"/>
+			<Target title="src">
+				<Option output="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/lib/libsrc.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -75,14 +75,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Esper/Documents/Avans/Jaar\ 4/Blok\ 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 example"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Esper/Documents/Avans/Jaar\ 4/Blok\ 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 src"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Esper/Documents/Avans/Jaar\ 4/Blok\ 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Esper/Documents/Avans/Jaar\ 4/Blok\ 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Esper/Documents/Avans/Jaar\ 4/Blok\ 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="example/fast">
-				<Option output="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/lib/libexample.a" prefix_auto="0" extension_auto="0"/>
+			<Target title="src/fast">
+				<Option output="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/lib/libsrc.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -97,7 +97,7 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Esper/Documents/Avans/Jaar\ 4/Blok\ 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 example/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Esper/Documents/Avans/Jaar\ 4/Blok\ 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 src/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Esper/Documents/Avans/Jaar\ 4/Blok\ 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Esper/Documents/Avans/Jaar\ 4/Blok\ 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Esper/Documents/Avans/Jaar\ 4/Blok\ 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
@@ -203,20 +203,20 @@
 			<Option target="gtest_main"/>
 		</Unit>
 		<Unit filename="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/src/example.cpp">
-			<Option target="example"/>
+			<Option target="src"/>
 		</Unit>
 		<Unit filename="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/src/example.h">
-			<Option target="example"/>
+			<Option target="src"/>
 		</Unit>
 		<Unit filename="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/src/main.cpp">
 			<Option target="gtesting"/>
-			<Option target="example"/>
+			<Option target="src"/>
 		</Unit>
 		<Unit filename="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/src/substract.cpp">
-			<Option target="example"/>
+			<Option target="src"/>
 		</Unit>
 		<Unit filename="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/src/substract.h">
-			<Option target="example"/>
+			<Option target="src"/>
 		</Unit>
 		<Unit filename="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

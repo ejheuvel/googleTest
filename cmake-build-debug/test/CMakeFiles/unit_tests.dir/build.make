@@ -110,7 +110,7 @@ bin/unit_tests: test/CMakeFiles/unit_tests.dir/example_subtract.cpp.o
 bin/unit_tests: test/CMakeFiles/unit_tests.dir/substract_testing.cpp.o
 bin/unit_tests: test/CMakeFiles/unit_tests.dir/build.make
 bin/unit_tests: lib/libgtest_main.a
-bin/unit_tests: lib/libexample.a
+bin/unit_tests: lib/libsrc.a
 bin/unit_tests: lib/libgtest.a
 bin/unit_tests: test/CMakeFiles/unit_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/Esper/Documents/Avans/Jaar 4/Blok 1/Project/CPP/googletest/gtest-demo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/unit_tests"

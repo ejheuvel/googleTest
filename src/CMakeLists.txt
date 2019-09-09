@@ -1,11 +1,10 @@
-cmake_minimum_required(VERSION 3.14)
 project(gtest)
 set(CMAKE_CXX_STANDARD 14)
 
-add_library(example "" main.cpp substract.cpp substract.h)
+add_library(src main.cpp substract.cpp substract.h)
 
 target_sources(
-    example
+    src
     PRIVATE
         example.cpp
     PUBLIC
@@ -13,7 +12,7 @@ target_sources(
     )
 
 target_include_directories(
-    example
+    src
     PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}
     )
